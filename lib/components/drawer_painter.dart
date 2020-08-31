@@ -16,7 +16,7 @@ class DrawerPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     Paint paint = Paint()
-      ..color = Colors.white
+      ..color = Colors.deepOrange[100].withOpacity(0.8)
       ..style = PaintingStyle.fill;
     Path path = Path();
     path.moveTo(-size.width, 0);

@@ -6,9 +6,15 @@ class MyButton extends StatelessWidget {
   final double textSize;
   final double height;
   final Function onPress;
+  final Color menuColor;
 
   MyButton(
-      {this.text, this.iconData, this.textSize, this.height, this.onPress});
+      {this.text,
+      this.iconData,
+      this.textSize,
+      this.height,
+      this.onPress,
+      this.menuColor});
 
   @override
   Widget build(BuildContext context) {
@@ -20,14 +26,14 @@ class MyButton extends StatelessWidget {
         children: <Widget>[
           Icon(
             iconData,
-            color: Colors.black45,
+            color: menuColor,
           ),
           SizedBox(
             width: 10,
           ),
           Text(
             text,
-            style: TextStyle(color: Colors.black45, fontSize: textSize),
+            style: TextStyle(color: menuColor, fontSize: textSize),
           ),
         ],
       ),

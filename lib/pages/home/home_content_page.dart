@@ -1,17 +1,19 @@
-import 'package:FlutterElasticNavigationSidebar/pages/home/component/app_bar.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class ProfilePage extends StatelessWidget {
+import 'component/app_bar.dart';
+
+class HomeContentPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        buildAppbar(context, 'Profile Page'),
+        buildAppbar(context, 'Home Page'),
         SizedBox(
           height: 10.0,
         ),
         Container(
-          child: Text('Profile Page Content'),
+          child: Text('Home Page Content'),
         ),
       ],
     );
